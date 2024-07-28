@@ -16,6 +16,7 @@ body{
     background-size: cover;
 
 }
+
 .wrapper{
     padding: 30px 40px;
     background: transparent;
@@ -41,11 +42,11 @@ body{
     height: 100%;
     border: none;
     outline: none;
-    background: transparent ;
+    background: transparent !important ;
     border: 2px solid rgba(255, 255, 255,.2);
     border-radius: 40px;
     font-size:16px ;
-    color: #fff;
+    color: #fff !important;
     padding: 20px 45px 20px 20px;
 }
 input::placeholder{
@@ -93,6 +94,9 @@ input::placeholder{
     outline: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+.btn:hover{
+    box-shadow: 0 0 10px white;
+}
 .register-link{
     text-align: center;
     margin:20px 0 15px;
@@ -107,3 +111,14 @@ input::placeholder{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
